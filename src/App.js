@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import Post from './components/Post';
-import PostForm from './components/PostForm';
-
-
+import Post from './components/container/Post/Post';
+import PostForm from './components/container/PostForm/PostForm';
 
 
 function App() {
-
 
   const [posts, setPosts] = useState([]);
 

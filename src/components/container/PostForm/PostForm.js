@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../PostForm/postform.scss'
 
 function PostForm({ onSubmit }) {
     const [title, setTitle] = useState('');
