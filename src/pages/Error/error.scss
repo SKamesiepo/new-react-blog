@@ -1,0 +1,12 @@
+.error-btn {
+  background-color: rgb(44, 181, 44);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.error-btn:hover {
+  background-color: green;
+}

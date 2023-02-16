@@ -3,14 +3,15 @@ import './header.scss'
 
 const Header = () => {
   const handleClick = () => {
-    localStorage.clear();
+    localStorage.removeItem('emailData');
+    localStorage.removeItem('passwordData');
     window.location.reload();
   }
 
   return (
     <header>
       <h1>My React Blog</h1>
-      <button onClick={handleClick}>Logout</button>
+      <button className="logout-btn" onClick={handleClick}>Logout</button>
     </header>
   );
 };

@@ -17,16 +17,22 @@ function Authentication() {
   }
 
   return (
-    <div> {
+    <div> 
+
+      {
       getEmail && getPassword ?
         <App /> :
-        <div className="loginContainer">
-          <form onSubmit={handleSubmit}>
-            <input type="text" ref={email} />
-            <input type="password" ref={password} />
-            <button>Login</button>
-          </form>
 
+        <div className="loginContainer">
+          <h1>Welcome To Shaun's Blog!</h1>
+          <h5>Please Enter Your Login Details Below To Proceed:</h5>
+          <form className="loginForm" onSubmit={handleSubmit}>
+            <div className="loginInputs">
+              <input type="text" ref={email} placeholder="Enter your email..."/>
+              <input type="password" ref={password} placeholder="Enter your password..."/>
+            </div>
+          <button>Login</button>
+          </form>
         </div>
     }
     </div>
